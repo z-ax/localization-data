@@ -3,7 +3,7 @@
 
 # Introduction
 
-An extension to [countries-list](https://npmjs.org/packages/countries-list) that does also contain scripts and associates languages with their corresponding available scripts.
+An extension to [countries-list](https://npmjs.org/packages/countries-list) that does also contain scripts and associates languages with their corresponding available scripts (ISO 15924).
 
 ## Example
 
@@ -89,6 +89,11 @@ An extension to [countries-list](https://npmjs.org/packages/countries-list) that
         }
     }
 ````
+
+# Data sources
+
+[https://en.wikipedia.org/wiki/ISO_15924](https://en.wikipedia.org/wiki/ISO_15924)
+[https://github.com/unicode-org/cldr/blob/master/common/supplemental/supplementalData.xml](https://github.com/unicode-org/cldr/blob/master/common/supplemental/supplementalData.xml)
 
 # LICENSE
 
