@@ -1,7 +1,94 @@
 @trenskow/localization-data
 ----
 
+# Introduction
+
 An extension to [countries-list](https://npmjs.org/packages/countries-list) that does also contain scripts and associates languages with their corresponding available scripts.
+
+## Example
+
+````json
+    {
+        "continents": {
+            [ see countries-list package ]
+        },
+        "countries": {
+            [ see countries-list package ]
+        },
+        "languages": {
+            "ar": {
+                "name": "Arabic",
+                "native": "العربية",
+                "scripts": {
+                    "Arab": {
+                        "countries": [
+                            "AE",
+                            "BH",
+                            "DJ",
+                            ...
+                            "TD",
+                            "TN",
+                            "YE"
+                        ]
+                    },
+                    "Syrc": {
+                        "countries": [
+                            "IR",
+                            "SS"
+                        ],
+                        "secondary": true
+                    }
+                }
+            },
+            ...
+            "uk": {
+                "name": "Ukrainian",
+                "native": "Українська",
+                "scripts": {
+                    "Cyrl": {
+                        "countries": [
+                            "UA"
+                        ]
+                    }
+                }
+            }
+        },
+        "scripts": {
+            "Adlm": {
+                "no": "166",
+                "name": "Adlam",
+                "direction": "rl"
+            },
+            "Afak": {
+                "no": "439",
+                "name": "Afaka",
+                "direction": "lr"
+            },
+            "Arab": {
+                "no": "160",
+                "name": "Arabic",
+                "direction": "rl"
+            },
+            ....
+            "Latn": {
+                "no": "215",
+                "name": "Latin",
+                "direction": "lr"
+            },
+            ....
+            "Zinh": {
+                "no": "994",
+                "name": "Code for inherited script",
+                "direction": "lr"
+            },
+            "Zmth": {
+                "no": "995",
+                "name": "Mathematical notation",
+                "direction": "lr"
+            }
+        }
+    }
+````
 
 # LICENSE
 
