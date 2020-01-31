@@ -7,13 +7,13 @@ An extension to [countries-list](https://npmjs.org/packages/countries-list) that
 
 ## Example
 
-````json
+````javascript
     {
         "continents": {
-            [ see countries-list package ]
+            // [ see countries-list package ]
         },
         "countries": {
-            [ see countries-list package ]
+            // [ see countries-list package ]
         },
         "languages": {
             "ar": {
@@ -40,7 +40,7 @@ An extension to [countries-list](https://npmjs.org/packages/countries-list) that
                     }
                 }
             },
-            ...
+            // ...
             "uk": {
                 "name": "Ukrainian",
                 "native": "Українська",
@@ -69,13 +69,13 @@ An extension to [countries-list](https://npmjs.org/packages/countries-list) that
                 "name": "Arabic",
                 "direction": "rl"
             },
-            ....
+            // ....
             "Latn": {
                 "no": "215",
                 "name": "Latin",
                 "direction": "lr"
             },
-            ....
+            // ....
             "Zinh": {
                 "no": "994",
                 "name": "Code for inherited script",
