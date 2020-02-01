@@ -78,14 +78,14 @@ An extension to [countries-list](https://npmjs.org/packages/countries-list) that
                 "direction": "lr"
             },
             // ....
-            "Zinh": {
-                "no": "994",
-                "name": "Code for inherited script",
-                "direction": "lr"
+            "Yezi": {
+                "no": "192",
+                "name": "Yezidi",
+                "direction": "rl"
             },
-            "Zmth": {
-                "no": "995",
-                "name": "Mathematical notation",
+            "Yiii": {
+                "no": "460",
+                "name": "Yi",
                 "direction": "lr"
             }
         }
