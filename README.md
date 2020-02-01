@@ -3,7 +3,7 @@
 
 # Introduction
 
-An extension to [countries-list](https://npmjs.org/packages/countries-list) that does also contain scripts and associates languages with their corresponding available scripts (ISO 15924).
+An extension to [countries-list](https://npmjs.org/package/countries-list) that does also contain scripts and associates languages with their corresponding available scripts (ISO 15924).
 
 ## Example
 
