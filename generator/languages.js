@@ -6,6 +6,10 @@ const { promisify } = require('util');
 const fs = require('fs');
 const xml2js = require('xml2js');
 
+const macros = {
+	'nb': ['nb','no']
+};
+
 module.exports = exports = () => {
 
 	return promisify(fs.readFile)(__dirname + '/data/languages.xml')
@@ -29,25 +33,28 @@ module.exports = exports = () => {
 					return language;
 				})
 				.reduce((res, language) => {
-					res[language.type] = res[language.type] || {
-						scripts: {}
-					};
-					language.scripts.forEach((script) => {
-						if (!scripts[script]) {
-							if (process.argv[2] === 'debug') console.error(script);
-							return;
-						}
-						language.territories = language.territories || Object.keys(countries).filter((country) => {
-							return countries[country].languages.includes(language.type);
-						});
-						if (language.alt !== 'secondary') {
-							res[language.type].primaryScript = script;
-						}
-						res[language.type].scripts[script] = {
-							countries: language.territories.filter((country) => {
-								return countries[country];
-							})
+					const types = macros[language.type] || [language.type];
+					types.forEach((type) => {
+						res[type] = res[type] || {
+							scripts: {}
 						};
+						language.scripts.forEach((script) => {
+							if (!scripts[script]) {
+								if (process.argv[2] === 'debug') console.error(script);
+								return;
+							}
+							language.territories = language.territories || Object.keys(countries).filter((country) => {
+								return countries[country].languages.includes(type);
+							});
+							if (language.alt !== 'secondary') {
+								res[type].primaryScript = script;
+							}
+							res[type].scripts[script] = {
+								countries: language.territories.filter((country) => {
+									return countries[country];
+								})
+							};
+						});
 					});
 					return res;
 				}, {});
