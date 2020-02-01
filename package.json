@@ -1,10 +1,10 @@
 {
   "name": "@trenskow/localization-data",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A collection of languages, scripts and countries.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node ./generator/"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "dependencies": {
     "countries-list": "^2.5.1",
     "merge": "^1.2.1"
+  },
+  "devDependencies": {
+    "xml2js": "^0.4.23"
   }
 }

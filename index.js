@@ -5,8 +5,8 @@ const
 	merge = require('merge');
 
 const
-	scripts = require('./data/scripts.json'),
-	languagesAllScripts = require('./data/languages-scripts.json');
+	scripts = require('./dist/scripts.json'),
+	languagesAllScripts = require('./dist/languages-scripts.json');
 
 const languagesScripts = Object.keys(languagesAllScripts).reduce((res, language) => {
 	if (!countriesList.languages[language]) return res;

@@ -16,41 +16,43 @@ An extension to [countries-list](https://npmjs.org/packages/countries-list) that
             // [ see countries-list package ]
         },
         "languages": {
-            "ar": {
-                "name": "Arabic",
-                "native": "العربية",
+            "af": {
+                "name": "Afrikaans",
+                "native": "Afrikaans",
                 "scripts": {
-                    "Arab": {
+                    "Latn": {
                         "countries": [
-                            "AE",
-                            "BH",
-                            "DJ",
-                            ...
-                            "TD",
-                            "TN",
-                            "YE"
+                            "NA",
+                            "ZA"
                         ]
-                    },
-                    "Syrc": {
-                        "countries": [
-                            "IR",
-                            "SS"
-                        ],
-                        "secondary": true
                     }
-                }
+                },
+                "primaryScript": "Latn"
+            },
+            "am": {
+                "name": "Amharic",
+                "native": "አማርኛ",
+                "scripts": {
+                    "Ethi": {
+                        "countries": [
+                            "ET"
+                        ]
+                    }
+                },
+                "primaryScript": "Ethi"
             },
             // ...
-            "uk": {
-                "name": "Ukrainian",
-                "native": "Українська",
+            "zu": {
+                "name": "Zulu",
+                "native": "isiZulu",
                 "scripts": {
-                    "Cyrl": {
+                    "Latn": {
                         "countries": [
-                            "UA"
+                            "ZA"
                         ]
                     }
-                }
+                },
+                "primaryScript": "Latn"
             }
         },
         "scripts": {
@@ -94,6 +96,11 @@ An extension to [countries-list](https://npmjs.org/packages/countries-list) that
 
 * [https://en.wikipedia.org/wiki/ISO_15924](https://en.wikipedia.org/wiki/ISO_15924)
 * [https://github.com/unicode-org/cldr/blob/master/common/supplemental/supplementalData.xml](https://github.com/unicode-org/cldr/blob/master/common/supplemental/supplementalData.xml)
+
+# Contributing
+
+* `/dist` contains the generated and served data.
+* `/generator` contains the source and generator scripts.
 
 # LICENSE
 
