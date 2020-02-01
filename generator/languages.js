@@ -47,7 +47,8 @@ module.exports = exports = () => {
 								return countries[country].languages.includes(type);
 							});
 							if (language.alt !== 'secondary') {
-								res[type].primaryScript = script;
+								res[type].primaryScripts = res[type].primaryScripts || [];
+								res[type].primaryScripts.push(script);
 							}
 							res[type].scripts[script] = {
 								countries: language.territories.filter((country) => {

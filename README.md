@@ -27,7 +27,9 @@ An extension to [countries-list](https://npmjs.org/package/countries-list) that 
                         ]
                     }
                 },
-                "primaryScript": "Latn"
+                "primaryScripts": [
+                    "Latn"
+                ]
             },
             "am": {
                 "name": "Amharic",
@@ -39,7 +41,9 @@ An extension to [countries-list](https://npmjs.org/package/countries-list) that 
                         ]
                     }
                 },
-                "primaryScript": "Ethi"
+                "primaryScripts": [
+                    "Ethi"
+                ]
             },
             // ...
             "zu": {
@@ -52,7 +56,9 @@ An extension to [countries-list](https://npmjs.org/package/countries-list) that 
                         ]
                     }
                 },
-                "primaryScript": "Latn"
+                "primaryScripts": [
+                    "Latn"
+                ]
             }
         },
         "scripts": {
